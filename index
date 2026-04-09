@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorMatch: IT Career Guidance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        nav { 
+            background-color: #163e24; 
+            padding: 20px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: relative; 
+            z-index: 1000;      
+        }
+        .logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; }
+        
+        .nav-links a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 25px; 
+            font-size: 14px; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+        .nav-links a:hover { color: #ffd700; }
+        .active { color: #ffd700 !important; }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('ara.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+            z-index: 1; 
+        }
+        
+        .btn-group .btn {
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 5px;
+            display: inline-block;
+        }
+        .btn-green { background: #1e5631; color: white; }
+        .btn-outline { border: 1px solid white; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">MajorMatch: IT Career Guidance</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="majors.html">MAJORS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Find Your IT Major <br> with MajorMatch</h1>
+        <p>Discover the best IT major that matches your skills, interests, and future career at PHINMA COC.</p>
+        <div class="btn-group">
+            <a href="majors.html" class="btn btn-green">EXPLORE MAJORS</a>
+            <a href="about.html" class="btn btn-outline">LEARN MORE</a>
+
+        </div>
+    </header>
+
+</body>
+</html>
