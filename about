@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MajorMatch: IT Career Guidance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f4; color: #333; line-height: 1.6; }
+
+        /* Navigation */
+        nav { 
+            background-color: #163e24; 
+            padding: 20px 10%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 25px; font-size: 14px; font-weight: bold; }
+        .active { color: #ffd700 !important; }
+
+        /* Hooked Header */
+        .about-header {
+            background: linear-gradient(rgba(22, 62, 36, 0.85), rgba(22, 62, 36, 0.85)), url('ara.jpg');
+            background-size: cover; background-position: center;
+            color: white; padding: 100px 10%; text-align: center;
+        }
+        .about-header h1 { font-size: 45px; margin-bottom: 10px; }
+        .about-header p { font-size: 20px; color: #ffd700; font-weight: 300; }
+
+        /* Container */
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+
+        /* Our Story */
+        .story-section { 
+            display: flex; 
+            align-items: center; 
+            gap: 40px; 
+            margin-bottom: 80px;
+            flex-wrap: wrap;
+        }
+        .story-text { flex: 1; min-width: 300px; }
+        .story-text h2 { color: #163e24; font-size: 32px; margin-bottom: 20px; }
+        .story-text p { font-size: 18px; color: #555; }
+
+        /* Goals Grid */
+        .goals-title { text-align: center; margin-bottom: 40px; color: #163e24; }
+        .goals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .goal-card {
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            text-align: left;
+            border-top: 5px solid #ffd700;
+            transition: 0.3s;
+        }
+        .goal-card:hover { transform: translateY(-5px); }
+        .goal-card h3 { color: #163e24; font-size: 24px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .goal-card p { color: #666; font-size: 15px; }
+
+        /* Mission Box */
+        .mission-box {
+            background: #163e24;
+            color: white;
+            padding: 60px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 80px 0;
+        }
+        .mission-box h2 { color: #ffd700; margin-bottom: 20px; font-size: 30px; }
+        .mission-box p { font-size: 22px; font-style: italic; max-width: 800px; margin: 0 auto; }
+
+        /* Contact Shortcut (Same as Index) */
+        .contact-shortcut {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 80px;
+        }
+        .contact-shortcut h2 { color: #163e24; margin-bottom: 15px; }
+        .contact-shortcut p { color: #666; margin-bottom: 25px; }
+        .secondary-btn { border: 2px solid #163e24; color: #163e24; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .secondary-btn:hover { background: #163e24; color: white; }
+
+        footer { text-align: center; padding: 50px; background: #0d2616; color: white; }
+        .back-home { color: #ffd700; text-decoration: none; font-weight: bold; font-size: 18px; }
+        .back-home:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">MajorMatch: IT Career Guidance</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html" class="active">ABOUT US</a>
+            <a href="majors.html">MAJORS</a>
+            <a href="contact.html">CONTACT</a> 
+        </div>
+    </nav>
+
+    <header class="about-header">
+        <h1>Stop Guessing. Start Coding.</h1>
+        <p>Your future in IT is too important to leave to chance.</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="story-section">
+            <div class="story-text">
+                <h2>Why MajorMatch?</h2>
+                <p>We've all been there: staring at the enrollment form, wondering if we should pick Cybersecurity or Digital Arts. The pressure is real. MajorMatch was built to bridge that gap, turning your <strong>"I don't know"</strong> into a <strong>clear career roadmap.</strong></p>
+            </div>
+        </section>
+
+        <h2 class="goals-title">Our Promise to You</h2>
+        <div class="goals-grid">
+            <div class="goal-card">
+                <h3>🔍 Real Clarity</h3>
+                <p>Forget the complicated tech jargon. We break down each specialization into terms you actually care about: what you'll do, what you'll learn, and who you'll become.</p>
+            </div>
+            <div class="goal-card">
+                <h3>⚡ Total Confidence</h3>
+                <p>No more "what ifs." We provide the guidance you need so you can walk into your 3rd-year specializations knowing you're in the right place.</p>
+            </div>
+            <div class="goal-card">
+                <h3>🏆 Future Success</h3>
+                <p>We don't just help you choose a major; we help you start your career. MajorMatch connects your skills at PHINMA COC to the real-world demands of the IT industry.</p>
+            </div>
+        </div>
+
+        <section class="mission-box">
+            <h2>The Mission</h2>
+            <p>"To ensure that every IT student in PHINMA COC Carmen finds their true calling, transforming their passion into a world-class career."</p>
+        </section>
+
+        <section style="text-align: center;">
+            <h2 style="color: #163e24; margin-bottom: 20px;">Built by Students, for Students</h2>
+            <p style="max-width: 700px; margin: 0 auto; font-size: 18px; color: #666;">
+                We are your peers. We know the struggle. We built this tool because we believe that the best guidance comes from those who are walking the same halls as you.
+            </p>
+        </section>
+
+        <div class="contact-shortcut">
+            <h2>Have Questions?</h2>
+            <p>Our team of developers and researchers are here to help you navigate your IT journey.</p>
+            <a href="contact.html" class="secondary-btn">Contact the Team</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="index.html" class="back-home">Ready to find your match? ← Back to Home</a>
+        <p style="margin-top: 30px; font-size: 12px; opacity: 0.6;">&copy; 2026 MajorMatch | PHINMA COC Carmen Campus</p>
+    </footer>
+
+</body>
+</html>
