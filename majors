@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MajorMatch: IT Career Guidance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f4; color: #333; scroll-behavior: smooth; }
+
+        /* Nav */
+        nav { background: #163e24; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { color: white; text-decoration: none; font-weight: bold; font-size: 24px; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; font-size: 13px; }
+        .active-link { color: #ffd700; }
+
+        /* Hero */
+        .hero { height: 60vh; background: #163e24; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 45px; margin-bottom: 10px; }
+        .hero p { font-size: 20px; color: #ffd700; }
+
+        /* Demonstration Sections */
+        .demo-section { padding: 100px 10%; display: flex; align-items: center; gap: 50px; min-height: 80vh; }
+        .demo-section:nth-child(even) { background: #fff; flex-direction: row-reverse; }
+        .demo-section:nth-child(odd) { background: #f9f9f9; }
+
+        .demo-img { flex: 1; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .demo-img img { width: 100%; height: 400px; object-fit: cover; display: block; }
+
+        .demo-text { flex: 1; }
+        .demo-text span { color: #1e5631; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+        .demo-text h2 { font-size: 36px; color: #163e24; margin: 10px 0 20px 0; }
+        .demo-text p { font-size: 18px; color: #555; margin-bottom: 25px; line-height: 1.8; }
+
+        /* Tools/Focus Pills */
+        .tools { display: flex; gap: 10px; flex-wrap: wrap; }
+        .tool-pill { background: #163e24; color: white; padding: 8px 15px; border-radius: 50px; font-size: 13px; font-weight: bold; }
+
+        /* Contact Shortcut */
+        .contact-shortcut {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 40px 10% 80px 10%;
+        }
+        .contact-shortcut h2 { color: #163e24; margin-bottom: 15px; }
+        .contact-shortcut p { color: #666; margin-bottom: 25px; }
+        .secondary-btn { border: 2px solid #163e24; color: #163e24; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .secondary-btn:hover { background: #163e24; color: white; }
+
+        footer { text-align: center; padding: 60px; background: #0d2616; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">MajorMatch: IT Career Guidance</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="majors.html" class="active-link">MAJORS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Demonstrate Your Future</h1>
+        <p>A deep dive into the 4 specializations of IT.</p>
+    </header>
+
+    <section class="demo-section" id="analytics">
+        <div class="demo-img"><img src="data.jpg" alt="Business Analytics"></div>
+        <div class="demo-text">
+            <span>The Data Expert</span>
+            <h2>Business Analytics</h2>
+            <p>Imagine being the person who can predict a company's success. You will learn to collect raw data and turn it into visual stories that help CEOs make million-dollar decisions.</p>
+            <div class="tools">
+                <div class="tool-pill">Tableau</div>
+                <div class="tool-pill">SQL</div>
+                <div class="tool-pill">Python</div>
+                <div class="tool-pill">Power BI</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section" id="cyber">
+        <div class="demo-img"><img src="cyber.jpg" alt="Cybersecurity"></div>
+        <div class="demo-text">
+            <span>The Digital Guard</span>
+            <h2>Cybersecurity</h2>
+            <p>Cybersecurity is about more than just passwords. You will learn how to hack for good, identifying weaknesses in a network and building high-tech shields to protect sensitive information from global threats.</p>
+            <div class="tools">
+                <div class="tool-pill">Ethical Hacking</div>
+                <div class="tool-pill">Network Defense</div>
+                <div class="tool-pill">Digital Forensics</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section" id="arts">
+        <div class="demo-img"><img src="digi.jpg" alt="Digital Arts"></div>
+        <div class="demo-text">
+            <span>The Creative Techie</span>
+            <h2>Digital Arts</h2>
+            <p>Design is where logic meets beauty. In this major, you'll demonstrate your creativity by building user interfaces (UI) and user experiences (UX) that are not only pretty but also easy to use.</p>
+            <div class="tools">
+                <div class="tool-pill">Adobe XD</div>
+                <div class="tool-pill">Photoshop</div>
+                <div class="tool-pill">3D Animation</div>
+                <div class="tool-pill">Figma</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section" id="dev">
+        <div class="demo-img"><img src="sys.jpg" alt="System Development"></div>
+        <div class="demo-text">
+            <span>The Digital Builder</span>
+            <h2>System Development</h2>
+            <p>From social media apps to complex operating systems, you are the architect. You'll learn the core of programming—building tools that solve everyday problems for millions of people.</p>
+            <div class="tools">
+                <div class="tool-pill">Java / C#</div>
+                <div class="tool-pill">Web Development</div>
+                <div class="tool-pill">API Integration</div>
+                <div class="tool-pill">Mobile Apps</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-shortcut">
+        <h2>Still Undecided?</h2>
+        <p>Our team can help you weigh your options based on your skills and interests.</p>
+        <a href="contact.html" class="secondary-btn">Contact the Team</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MajorMatch | PHINMA COC Carmen Campus</p>
+        <p style="font-size: 12px; margin-top: 10px; opacity: 0.6;">Helping IT students find their path through demonstration.</p>
+    </footer>
+
+</body>
+</html>
